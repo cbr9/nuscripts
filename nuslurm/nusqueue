@@ -1,6 +1,6 @@
 #!/usr/bin/env nu 
 
-source utils.nu
+source nutils
 
 def nusqueue [] {
   let table = squeue --format "%i\t%u\t%M\t%B\t%j\t%P\t%g\t%T\t%Q" | from tsv
